@@ -21,3 +21,11 @@ fprintf(fp, "%lf   %lf\n", j, k);
 fclose(fp);
     return 0;
 }
+
+/*
+JW-2020-06-14:
+--------------
+> nice implementation! (8/10) 
+> missing extra lib (*.c + *.h) incl. includegard includeguards: -1 Pkt
+> missing abort criteria max iterations: -1Pkt
+*/
