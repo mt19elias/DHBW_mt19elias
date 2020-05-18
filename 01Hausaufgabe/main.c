@@ -25,7 +25,6 @@ fclose(fp);
 /*
 JW-2020-06-14:
 --------------
-> nice implementation! (8/10) 
-> missing extra lib (*.c + *.h) incl. includegard includeguards: -1 Pkt
+> nice implementation! (9/10) 
 > missing abort criteria max iterations: -1Pkt
 */
