@@ -21,7 +21,7 @@ double rea1, rea2, ima1, ima2;
 
 printf("----------------------------\nThis program calculates complex numbers.\n\n");
 printf("Please insert first complex number (i.e. '23+73i'): ");
-scanf("%s", &number1); //int -> %d; float -> %f; char -> %c
+scanf("%s", &number1); //int -> %d; float -> %f; char -> %c // JW 2020-05-20: this is technically wrong but will be handled by the compiler. please use >&number[0]< or >number< same in line 26: -1Pkt
 printf("Please insert second complex number (i.e. '23+73i'): ");
 scanf("%s", &number2);
 
@@ -37,7 +37,7 @@ number res= {0, 0};
 printf("which arithmetic operations do you want to perform?\ni.e. + - * / \n");
 scanf("%s", &aop);      //aop=arithmetic operations
 
-switch(aop) {
+switch(aop) { // nice use of switch statement
 	case '+': res = add(num1, num2); break;
 	case '-': res = sub(num1, num2); break;
 	case '*': res = mul(num1, num2); break;
@@ -48,3 +48,9 @@ printf("the result is %.2f+%.2fi", res.rea, res.ima);
 
     return 0;
 }
+/*
+JW-2020-06-20:
+--------------
+> well done! (9/10) 
+> scanf char array line 24&26: -1 Pkt
+*/
