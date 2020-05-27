@@ -97,7 +97,7 @@ void loadList(listElement *start){
 	char filename[50];
 	printf("\nloading data...\n\n");
 	printf("availible data: \n----------------\n");
-	system("dir /b *.txt"); //print availible *.txt files in current location       (dir /b *.txt for windows)
+	system("ls /b *.txt"); //print availible *.txt files in current location       (dir /b *.txt for windows)
 	printf("\nfilname without extension: ");
 	scanf("%s",filename);
 	strcat(filename, ".txt"); // adding .txt to file name
@@ -148,4 +148,9 @@ void stringToLower(char *string) {
     printf("\n>>stringToLower fcn is tbd.\n\n");
 
 }
-
+/*
+JW-2020-05-27:
+--------------
+> well done (10/10) 
+> how much time did you spend on this exercise? I think it was a litte to easy wasnt it?
+*/
